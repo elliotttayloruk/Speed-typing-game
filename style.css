@@ -1,0 +1,147 @@
+h1, h2 {
+    text-align: center;
+}
+
+body {
+    background-color: cornflowerblue;
+    font-family: "Courier New", serif;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainDiv{
+    background-color: sandybrown;
+    width: 600px;
+    height: 400px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 20px;
+    z-index: 1;
+
+    /**Centre the main game box **/
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.currentWord {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.score {
+    font-size: 2em;
+}
+
+.inputArea{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    background-color: sandybrown;
+    border-style: dashed;
+    border-color: white;
+    border-width: 3px;
+    font-size: 30px;
+    resize: none;
+}
+
+.stopwatch{
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.correct{
+    background-color: green;
+}
+
+.wrong{
+    background-color: red;
+}
+
+.startGame {
+    font-size: 30px;
+    border-style: dashed;
+    background-color: darkgreen;
+    color: white;
+    border-radius: 5px;
+    width: 100px;
+    height: 50px;
+    visibility: visible;
+}
+
+#stopGame{
+    background-color: indianred;
+}
+
+#stopGame:hover{
+    background-color: darkred;
+}
+
+.startGame:hover {
+    background-color: green;
+    border-style: solid;
+}
+
+.itemPopup {
+    width: 75%;
+    background: lightgrey;
+    border-style: solid;
+    border-radius: 50px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    visibility: hidden;
+    padding: 0 30px 30px;
+    transition: transform 0.4s, top 0.4s;
+    font-size: 25px;
+    color: black;
+}
+
+.openPopup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.closePopup{
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+}
+
+.closeButton{
+    margin:auto;
+    display:block;
+    padding:0.5em 1em 0.5em 1em;
+    border-radius:100px;
+    border:none;
+    position:relative;
+    background: sandybrown;
+    cursor:pointer;
+    height:40px;
+    width:200px;
+    overflow:hidden;
+    transition:transform 0.1s;
+    z-index:1;
+}
+
+.closeButton:hover{
+    transform:scale(1.1);
+}
+
+#scoreDiv{
+    position: relative;
+}
+
+#gameInfo{
+    font-size: 15px;
+}
+
+

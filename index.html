@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="game.js" defer></script>
+<link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <title>Speed word typing!</title>
+</head>
+<body>
+
+<div class="itemPopup" id="itemPopup">
+    <h2 id="popH2"></h2>
+    <button onclick="closePopup()" class="closeButton">Back</button>
+</div>
+
+<div class ="buttonsDiv">
+    <button onclick="infoPopup()" id="gameInfo" class="closeButton">Game info (please read!)</button><br><br><br>
+    <button class="startGame" id="startGame" onclick="startGame();">Start</button>
+    <button class="startGame" id="stopGame" onclick="resetGame();">Stop</button>
+</div>
+
+<div class="mainDiv" id="mainDiv">
+
+    <h1>Speed typing!</h1>
+    <h2>How quick can you type 10 words?</h2>
+    <p>Timer:</p>
+    <div class="stopwatch" id="stopwatch">0</div><br>
+    <div class="currentWord" id="currentWord">-----</div>
+    <textarea class="inputArea" id="inputArea" autofocus readonly></textarea><br><br>
+    <div class="score" id="score">Word 1 / 10</div>
+    <div id="scoreDiv">
+        <h2><u>Previous scores</u></h2>
+    </div>
+</div>
+
+
+</body>
+</html>
